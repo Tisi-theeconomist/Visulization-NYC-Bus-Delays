@@ -115,8 +115,6 @@ for m, col in data_type.items():
 print(delay_info.info())
 
 
-
-
 # Visualization
 # Reasons for delays
 reason = delay_info.groupby("Reason").size()
@@ -145,16 +143,6 @@ plt.ylabel("Number of delays reported")
 plt.xlabel("Hour of the day")
 plt.show()
 
-
-
-
-
-
-
-
-
-
-    
 
 df = pd.DataFrame(np.array(delayed).reshape(-1,len(delayed)))
 
